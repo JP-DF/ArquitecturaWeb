@@ -3,8 +3,8 @@
 ## Tema: API gestor y seguimiento de proyectos.
 
 ## Integrantes: 
-  @Daniel Fiala Legajo 5938 </br>
-  @Juan Lopreato Legajo 51020
+####  @Daniel Fiala Legajo 5938 </br>
+####  @Juan Lopreato Legajo 51020
 =======
 
 + [Uso](#Uso)
@@ -23,7 +23,7 @@ Una vez haya descargado el mismo descomprimir el archivo -> README.md.
 </br>
 
 <a name="operatoria"></a>
-### Operatoria de uso 
+## Operatoria de uso 
 Mediante una única interface de simple gestion, los PM acceden a toda la informacion necesaria al momento que lo requiera sin necesidad de contar con ningún conocimiento extra, ProyectoCero se ocupa de gestionar la informacion necesaria incluyendo archivos de proyect.</br>
 Para acceder al servicio, los PM deberan estar dados de alta mediante el sitio exclisivo de ProyectoCero. En estos procesos se generará el usuario y clave para este servicio.
 
