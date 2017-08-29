@@ -1,12 +1,11 @@
 <a name="inicio"></a>
 Trabajo Practico de Arquitectura Web - UP 
 Tema: API gestor y seguimiento de proyectos.
-=======
-</br>
 Integrantes :
   @Daniel Fiala Legajo 5938
   @Juan Lopreato Legajo 51020
 =======
+
 + [Uso](#Uso)
      + [Operatoria de uso](#operatoria)
      + [Tabla de errores ](#codigoerror)
