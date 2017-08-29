@@ -1,9 +1,8 @@
 <a name="inicio"></a>
-Trabajo Practico de Arquitectura Web - Universidad de Palermo 
-</br>
+Trabajo Practico de Arquitectura Web - UP 
 Tema: API gestor y seguimiento de proyectos.
 =======
-</br></br>
+</br>
 Integrantes :
   @Daniel Fiala Legajo 5938
   @Juan Lopreato Legajo 51020
