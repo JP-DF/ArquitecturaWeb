@@ -2,7 +2,7 @@
 
 ## Tema: API gestor y seguimiento de proyectos.
 
-# Integrantes: 
+## Integrantes: 
   @Daniel Fiala Legajo 5938 </br>
   @Juan Lopreato Legajo 51020
 =======
