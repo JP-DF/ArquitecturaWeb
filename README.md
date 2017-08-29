@@ -1,7 +1,8 @@
-<a name="inicio"></a>
-Trabajo Practico de Arquitectura Web - UP 
-Tema: API gestor y seguimiento de proyectos.
-Integrantes :
+<a name="Trabajo Practico"></a> Arquitectura Web - UP 
+
+<a name="Tema"></a>: API gestor y seguimiento de proyectos.
+
+<a name="Integrantes"></a>
   @Daniel Fiala Legajo 5938
   @Juan Lopreato Legajo 51020
 =======
