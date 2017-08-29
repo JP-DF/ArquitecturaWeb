@@ -15,7 +15,7 @@
 
 ## Uso
 Desarrollo en lenguaje de programación interpretado JavaScript. El proyecto consiste en contener un ABM de usuarios, los cuales daran acceso a un repositorio de informacion y archivos ligados a un proyecto. La base de datos utilizada es mongoDB.Se debe descargar desde la URL el archivo proyecto.zip: https://github.com/JP-DF/ArquitecturaWeb-JP-DF/proyecto.zip
-Una vez haya descargado el mismo descomprimido, proyecto.js.
+Una vez haya descargado el mismo descomprimir el archivo -> proyecto.js.
 
 [<sub>Volver a inicio</sub>](#inicio)
 </br>
