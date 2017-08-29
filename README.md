@@ -1,4 +1,6 @@
-<a name="inicio"></a>Trabajo Practico de Arquitectura Web - Universidad de PalermoTema: API gestor y seguimiento de proyectosIntegrantes : @Daniel Fiala Legajo 5938 - @Juan Lopreato Legajo 51020
+<a name="inicio"></a>Trabajo Practico de Arquitectura Web - Universidad de PalermoTema: API gestor y seguimiento de proyectos.
+</br>
+Integrantes : @Daniel Fiala Legajo 5938 - @Juan Lopreato Legajo 51020
 =======
 + [Uso](#Uso)
      + [Operatoria de uso](#operatoria)
