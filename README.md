@@ -1,5 +1,5 @@
 ## Trabajo Practico Arquitectura Web - UP 
-(#inicio)
+
 ## Tema: API gestor y seguimiento de proyectos.
 
 ## Integrantes: 
@@ -23,7 +23,7 @@ Se debe descargar desde la URL el archivo README.md: https://github.com/JP-DF/Ar
 </br>
 Una vez haya descargado el mismo descomprimir el archivo -> README.md.
 
-[<sub>Volver a inicio</sub>](#inicio)
+[<sub>Volver a inicio</sub>](#uso)
 </br>
 
 <a name="operatoria"></a>
@@ -63,5 +63,5 @@ POST API/proyectos/archivosadjuntos/myproyecto
 <tr><td>503</td><td>Servicio no disponible.</td></tr>
 </table>
 
-[<sub>Volver a inicio</sub>](#inicio)
+[<sub>Volver a inicio</sub>](#uso)
 
