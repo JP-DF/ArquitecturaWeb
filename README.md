@@ -52,7 +52,7 @@ POST API/proyectos/archivosadjuntos/myproyecto
 ## Tabla de errores
 <table>
 <tr><th>Id mensaje</th><th>Mensaje</th></tr>
-<tr><td>200</td><td>La conexion es exitosa.</td></tr>
+<tr><td>200</td><td>Conexion exitosa.</td></tr>
 <tr><td>201</td><td>Recurso creado exitosamente.</td></tr>
 <tr><td>404</td><td>Informacion no disponible.</td></tr>
 <tr><td>401</td><td>No tiene autorizacion para el aceso intentado</td></tr>
