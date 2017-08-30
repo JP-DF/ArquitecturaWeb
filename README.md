@@ -7,12 +7,12 @@
 ####  @Juan Lopreato Legajo 51020
 
 
-+ [Uso](#Uso)
++ [Uso](#uso)
      + [Operatoria de uso](#operatoria)
      + [Tabla de errores ](#codigoerror)
      
 <a name="Comenzar a utilizar la API"></a>
-
+<a name="#uso"></a>
 ## Uso
 Desarrollo realizado en lenguaje de programación interpretado JavaScript.</br>
 El proyecto consiste en contener un ABM de usuarios, los cuales daran acceso a un repositorio de informacion donde se declara el proyecto y que usuarios tienen acceso, asi tambien poder enviar un archivos ligado al proyecto.</br> </br>
@@ -21,15 +21,15 @@ Se debe descargar desde la URL el archivo README.md: https://github.com/JP-DF/Ar
 </br>
 Una vez haya descargado el mismo descomprimir el archivo -> README.md.
 
-[<sub>Volver a inicio</sub>](#inicio)
+[<sub>Volver a inicio</sub>](#uso)
 </br>
 
-<a name="#Uso"></a>
+<a name="#operatoria"></a>
 ## Operatoria de uso 
 Mediante una única interface de simple gestion, los PM acceden a toda la informacion necesaria al momento que lo requiera sin necesidad de contar con ningún conocimiento extra, ProyectoCero se ocupa de gestionar la informacion necesaria incluyendo archivos de proyect.</br>
 Para acceder al servicio, los PM deberan estar dados de alta mediante el sitio exclisivo de ProyectoCero. En estos procesos se generará el usuario y clave para este servicio.
 
-[<sub>Volver a inicio</sub>](#inicio)
+[<sub>Volver a inicio</sub>](#uso)
 </br>
 
 <a name="EndPoints"></a>
@@ -59,5 +59,5 @@ POST API/proyectos/archivosadjuntos/myproyecto
 <tr><td>503</td><td>Servicio no disponible.</td></tr>
 </table>
 
-[<sub>Volver a inicio</sub>](#inicio)
+[<sub>Volver a inicio</sub>](#uso)
 
