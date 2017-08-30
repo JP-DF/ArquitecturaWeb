@@ -24,13 +24,29 @@ Una vez haya descargado el mismo descomprimir el archivo -> README.md.
 [<sub>Volver a inicio</sub>](#inicio)
 </br>
 
-<a name="operatoria"></a>
+<a name="#Uso"></a>
 ## Operatoria de uso 
 Mediante una única interface de simple gestion, los PM acceden a toda la informacion necesaria al momento que lo requiera sin necesidad de contar con ningún conocimiento extra, ProyectoCero se ocupa de gestionar la informacion necesaria incluyendo archivos de proyect.</br>
 Para acceder al servicio, los PM deberan estar dados de alta mediante el sitio exclisivo de ProyectoCero. En estos procesos se generará el usuario y clave para este servicio.
 
 [<sub>Volver a inicio</sub>](#inicio)
 </br>
+
+<a name="EndPoints"></a>
+## EndPoints
+#### Obtengo datos del proyecto
+GET API/Proyectos/myproyecto
+#### Obtengo Archivo Adjunto
+GET API/Proyectos/archivosadjuntos/myproyecto
+#### Elimino Proyecto
+DELETE API/Proyectos/myproyecto
+#### Elimino archivos del Proyecto
+DELETE API/Proyectos/archivosadjuntos/myproyecto
+#### Creo nombres de Proyecto
+POST API/proyectos/nombres_proyectos
+#### Creo archivos en el Proyecto
+POST API/proyectos/archivosadjuntos/myproyecto
+
 
 <a name="codigoerror"></a>
 ## Tabla de errores
