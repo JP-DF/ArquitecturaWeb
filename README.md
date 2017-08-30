@@ -1,6 +1,5 @@
-<a name="#inicio"></a>
 ## Trabajo Practico Arquitectura Web - UP 
-
+(#inicio)
 ## Tema: API gestor y seguimiento de proyectos.
 
 ## Integrantes: 
@@ -16,7 +15,6 @@
 </br>     
 
 <a name="#uso"></a>
-
 ## Uso
 Desarrollo realizado en lenguaje de programación interpretado JavaScript.</br>
 El proyecto consiste en contener un ABM de usuarios, los cuales daran acceso a un repositorio de informacion donde se declara el proyecto y que usuarios tienen acceso, asi tambien poder enviar un archivos ligado al proyecto.</br> </br>
