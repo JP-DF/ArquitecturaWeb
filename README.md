@@ -48,6 +48,10 @@ DELETE API/Proyectos/archivosadjuntos/myproyecto
 POST API/proyectos/nombres_proyectos
 #### Creo archivos en el Proyecto
 POST API/proyectos/archivosadjuntos/myproyecto
+#### Actualizo nombres de Proyecto
+PUT API/proyectos/nombres_proyectos
+
+
 
 [<sub>Volver a inicio</sub>](#uso)
 </br>
