@@ -1,3 +1,4 @@
+<a name="#inicio"></a>
 ## Trabajo Practico Arquitectura Web - UP 
 
 ## Tema: API gestor y seguimiento de proyectos.
@@ -14,8 +15,8 @@
 
 </br>     
 
-<a name="Comenzar a utilizar la API"></a>
 <a name="#uso"></a>
+
 ## Uso
 Desarrollo realizado en lenguaje de programación interpretado JavaScript.</br>
 El proyecto consiste en contener un ABM de usuarios, los cuales daran acceso a un repositorio de informacion donde se declara el proyecto y que usuarios tienen acceso, asi tambien poder enviar un archivos ligado al proyecto.</br> </br>
@@ -24,7 +25,7 @@ Se debe descargar desde la URL el archivo README.md: https://github.com/JP-DF/Ar
 </br>
 Una vez haya descargado el mismo descomprimir el archivo -> README.md.
 
-[<sub>Volver a inicio</sub>](#uso)
+[<sub>Volver a inicio</sub>](#inicio)
 </br>
 
 <a name="operatoria"></a>
@@ -64,5 +65,5 @@ POST API/proyectos/archivosadjuntos/myproyecto
 <tr><td>503</td><td>Servicio no disponible.</td></tr>
 </table>
 
-[<sub>Volver a inicio</sub>](#uso)
+[<sub>Volver a inicio</sub>](#inicio)
 
