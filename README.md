@@ -36,17 +36,17 @@ Para acceder al servicio, los PM deberan estar dados de alta mediante el sitio e
 <a name="EndPoints"></a>
 ## EndPoints
 #### Obtengo datos del proyecto
-GET /API/Proyectos/{nombres_proyectos}/myproyecto
+GET /API/Proyectos/{nombres_proyectos}/misproyectos
 #### Obtengo Archivo Adjunto
-GET /API/Proyectos/{nombres_proyectos}/archivosadjuntos/myproyecto
+GET /API/Proyectos/{nombres_proyectos}/archivosadjuntos/misproyectos
 #### Elimino Proyecto
-DELETE /API/Proyectos/{nombres_proyectos}/myproyecto
+DELETE /API/Proyectos/{nombres_proyectos}/misproyectos
 #### Elimino archivos del Proyecto
-DELETE /API/Proyectos/{nombres_proyectos}/archivosadjuntos/myproyecto
+DELETE /API/Proyectos/{nombres_proyectos}/archivosadjuntos/misproyectos
 #### Creo nombres de Proyecto
 POST /API/proyectos/{nombres_proyectos}
 #### Creo archivos en el Proyecto
-POST /API/proyectos/{nombres_proyectos}/archivosadjuntos/myproyecto
+POST /API/proyectos/{nombres_proyectos}/archivosadjuntos/misproyectos
 #### Actualizo nombres de Proyecto
 PUT /API/proyectos/{nombres_proyectos}
 
