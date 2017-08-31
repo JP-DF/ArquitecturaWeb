@@ -17,11 +17,10 @@
 <a name="#uso"></a>
 ## Uso
 Desarrollo realizado en lenguaje de programación interpretado JavaScript.</br>
-El proyecto consiste en contener un ABM de usuarios, los cuales daran acceso a un repositorio de informacion donde se declara el proyecto y que usuarios tienen acceso, asi tambien poder enviar un archivos ligado al proyecto.</br> </br>
+El proyecto consiste en contener un ABM de proyectos, los cuales daran acceso a un repositorio de informacion donde se declara el proyecto, duracion, asi tambien poder cargar archivos ligado al proyecto.</br> </br>
 La base de datos utilizada es mongoDB.</br>
-Se debe descargar desde la URL el archivo README.md: https://github.com/JP-DF/ArquitecturaWeb-JP-DF/blob/master/README.md
+Obtener mas informacion a traves de la URL: README.md: https://github.com/JP-DF/ArquitecturaWeb-JP-DF/blob/master/README.md
 </br>
-Una vez haya descargado el mismo descomprimir el archivo -> README.md.
 
 [<sub>Volver a inicio</sub>](#uso)
 </br>
