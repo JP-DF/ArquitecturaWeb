@@ -11,7 +11,7 @@ app.use(methodOverride());
 var router = express.Router();
 
 router.get('/', function(req, res) {
-   res.send("Hello World!");
+   res.send("DESARROLLO DE API REST DFIALA JLOPREATO");
 });
 
 app.use(router);

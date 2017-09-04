@@ -1,0 +1,119 @@
+Your environment has been set up for using Node.js 8.4.0 (x64) and npm.
+
+C:\Users\dfiala.DOMCSBTRANSTEX>cd package.json
+El sistema no puede encontrar la ruta especificada.
+
+C:\Users\dfiala.DOMCSBTRANSTEX>cd C:\Users\dfiala.DOMCSBTRANSTEX\Desktop\UP\Arqu
+itectura Web\Repositorio\ArquitecturaWeb-JP-DF\node-api-rest
+
+C:\Users\dfiala.DOMCSBTRANSTEX\Desktop\UP\Arquitectura Web\Repositorio\Arquitect
+uraWeb-JP-DF\node-api-rest>node package.json
+module.js:595
+    throw err;
+    ^
+
+SyntaxError: C:\Users\dfiala.DOMCSBTRANSTEX\Desktop\UP\Arquitectura Web\Reposito
+rio\ArquitecturaWeb-JP-DF\node-api-rest\package.json: Unexpected end of JSON inp
+ut
+    at JSON.parse (<anonymous>)
+    at Object.Module._extensions..json (module.js:592:27)
+    at Module.load (module.js:507:32)
+    at tryModuleLoad (module.js:470:12)
+    at Function.Module._load (module.js:462:3)
+    at Function.Module.runMain (module.js:609:10)
+    at startup (bootstrap_node.js:158:16)
+    at bootstrap_node.js:598:3
+
+C:\Users\dfiala.DOMCSBTRANSTEX\Desktop\UP\Arquitectura Web\Repositorio\Arquitect
+uraWeb-JP-DF\node-api-rest>npm install
+npm ERR! file C:\Users\dfiala.DOMCSBTRANSTEX\Desktop\UP\Arquitectura Web\Reposit
+orio\ArquitecturaWeb-JP-DF\node-api-rest\package.json
+npm ERR! code EJSONPARSE
+npm ERR! Failed to parse json
+npm ERR! No data, empty input at 1:1
+npm ERR!
+npm ERR! ^
+npm ERR! File: C:\Users\dfiala.DOMCSBTRANSTEX\Desktop\UP\Arquitectura Web\Reposi
+torio\ArquitecturaWeb-JP-DF\node-api-rest\package.json
+npm ERR! Failed to parse package.json data.
+npm ERR! package.json must be actual JSON, not just JavaScript.
+npm ERR!
+npm ERR! Tell the package author to fix their package.json file. JSON.parse
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\dfiala.DOMCSBTRANSTEX\AppData\Roaming\npm-cache\_logs\2017
+-09-04T19_55_40_688Z-debug.log
+
+C:\Users\dfiala.DOMCSBTRANSTEX\Desktop\UP\Arquitectura Web\Repositorio\Arquitect
+uraWeb-JP-DF\node-api-rest>npm install
+npm notice created a lockfile as package-lock.json. You should commit this file.
+
+npm WARN mongoskin@1.4.13 requires a peer of mongodb@~1.4 but none was installed
+.
+npm WARN node-api-rest@ No description
+npm WARN node-api-rest@ No repository field.
+npm WARN node-api-rest@ No license field.
+
+added 40 packages in 15.136s
+
+C:\Users\dfiala.DOMCSBTRANSTEX\Desktop\UP\Arquitectura Web\Repositorio\Arquitect
+uraWeb-JP-DF\node-api-rest>var express = require("express");
+"var" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\dfiala.DOMCSBTRANSTEX\Desktop\UP\Arquitectura Web\Repositorio\Arquitect
+uraWeb-JP-DF\node-api-rest>git init
+Reinitialized existing Git repository in C:/Users/dfiala.DOMCSBTRANSTEX/Desktop/
+UP/Arquitectura Web/Repositorio/ArquitecturaWeb-JP-DF/node-api-rest/.git/
+
+C:\Users\dfiala.DOMCSBTRANSTEX\Desktop\UP\Arquitectura Web\Repositorio\Arquitect
+uraWeb-JP-DF\node-api-rest>package.json
+
+C:\Users\dfiala.DOMCSBTRANSTEX\Desktop\UP\Arquitectura Web\Repositorio\Arquitect
+uraWeb-JP-DF\node-api-rest>npm install
+npm WARN deprecated mongodb@1.3.19: Please upgrade to 2.2.19 or higher
+
+> bson@0.2.2 install C:\Users\dfiala.DOMCSBTRANSTEX\Desktop\UP\Arquitectura Web\
+Repositorio\ArquitecturaWeb-JP-DF\node-api-rest\node_modules\bson
+> (node-gyp rebuild 2> builderror.log) || (exit 0)
+
+
+C:\Users\dfiala.DOMCSBTRANSTEX\Desktop\UP\Arquitectura Web\Repositorio\Arquitect
+uraWeb-JP-DF\node-api-rest\node_modules\bson>if not defined npm_config_node_gyp
+(node "C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin\\..\..\node_mod
+ules\node-gyp\bin\node-gyp.js" rebuild )  else (node "" rebuild )
+
+> kerberos@0.0.3 install C:\Users\dfiala.DOMCSBTRANSTEX\Desktop\UP\Arquitectura
+Web\Repositorio\ArquitecturaWeb-JP-DF\node-api-rest\node_modules\kerberos
+> (node-gyp rebuild 2> builderror.log) || (exit 0)
+
+
+C:\Users\dfiala.DOMCSBTRANSTEX\Desktop\UP\Arquitectura Web\Repositorio\Arquitect
+uraWeb-JP-DF\node-api-rest\node_modules\kerberos>if not defined npm_config_node_
+gyp (node "C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin\\..\..\node
+_modules\node-gyp\bin\node-gyp.js" rebuild )  else (node "" rebuild )
+npm WARN node-api-rest-example@2.0.0 No description
+npm WARN node-api-rest-example@2.0.0 No repository field.
+npm WARN node-api-rest-example@2.0.0 No license field.
+
+added 44 packages, removed 6 packages and updated 17 packages in 18.89s
+
+C:\Users\dfiala.DOMCSBTRANSTEX\Desktop\UP\Arquitectura Web\Repositorio\Arquitect
+uraWeb-JP-DF\node-api-rest>node app.js
+Node server running on http://localhost:3000
+^C
+C:\Users\dfiala.DOMCSBTRANSTEX\Desktop\UP\Arquitectura Web\Repositorio\Arquitect
+uraWeb-JP-DF\node-api-rest>
+C:\Users\dfiala.DOMCSBTRANSTEX\Desktop\UP\Arquitectura Web\Repositorio\Arquitect
+uraWeb-JP-DF\node-api-rest>
+C:\Users\dfiala.DOMCSBTRANSTEX\Desktop\UP\Arquitectura Web\Repositorio\Arquitect
+uraWeb-JP-DF\node-api-rest>node app.js
+Node server running on http://localhost:3000
+^C
+C:\Users\dfiala.DOMCSBTRANSTEX\Desktop\UP\Arquitectura Web\Repositorio\Arquitect
+uraWeb-JP-DF\node-api-rest>node app.js
+Node server running on http://localhost:3000
+^C
+C:\Users\dfiala.DOMCSBTRANSTEX\Desktop\UP\Arquitectura Web\Repositorio\Arquitect
+uraWeb-JP-DF\node-api-rest>node app.js
+Node server running on http://localhost:3000
