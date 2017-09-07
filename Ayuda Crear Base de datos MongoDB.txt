@@ -1,0 +1,6 @@
+crear una base de datos
+
+use dbproyectos
+show dbs
+db.movie.insert({"dbproyectos":"tutorials point"})
+show dbs
