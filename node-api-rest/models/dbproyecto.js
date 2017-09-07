@@ -13,4 +13,4 @@ var dbproyectoSchema = new Schema({
   summary:  { type: String }
 });
 
-module.exports = mongoose.model('dbproyecto', dbproyectoSchema);
+module.exports = mongoose.model('DBProyecto', dbproyectoSchema);
