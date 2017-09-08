@@ -29,22 +29,8 @@ app.use('/api', dbproyectos);
 */
 
 
-/*	
-//Permite conexion a la Base dbproyecto 
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/dbproyecto', function(error){
-   if(error){
-      throw error; 
-   }else{
-      console.log('Conectado a MongoDB');
-   }
-    console.log('Conectado a MongoDB');
-});
-  app.listen(3000, function() {
-    console.log("Node OK conectado a http://localhost:3000");
-  
-});
-*/
+
+
 mongoose.connect('mongodb://localhost/dbproyectos', function(err, res) {
   if(err) {
     console.log('ERROR de conexion con MONGODB. ' + err);

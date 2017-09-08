@@ -1,4 +1,4 @@
-crear una base de datos
+crear una base de datos mongodb
 
 use dbproyectos
 show dbs
