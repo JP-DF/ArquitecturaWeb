@@ -4,7 +4,7 @@
 
 ## Integrantes: 
 ####  @Daniel Fiala Legajo 5938 </br>
-####  @Juan Lopreato Legajo 51020
+####  @Juan Lopreiato Legajo 51020
 
 
 + [Uso](#uso)
@@ -36,19 +36,17 @@ Para acceder al servicio, los PM deberan estar dados de alta mediante el sitio e
 <a name="EndPoints"></a>
 ## EndPoints
 #### Obtengo datos del proyecto
-GET /API/Proyectos/{nombres_proyectos}/misproyectos
-#### Obtengo Archivo Adjunto
-GET /API/Proyectos/{nombres_proyectos}/archivosadjuntos/misproyectos
+GET /api/proyectos/{nombres_proyectos}
 #### Elimino Proyecto
-DELETE /API/Proyectos/{nombres_proyectos}/misproyectos
+DELETE /api/proyectos/{nombres_proyectos}
 #### Elimino archivos del Proyecto
-DELETE /API/Proyectos/{nombres_proyectos}/archivosadjuntos/misproyectos
+DELETE /api/proyectos/{nombres_proyectos}
 #### Creo nombres de Proyecto
-POST /API/proyectos/{nombres_proyectos}
+POST /api/proyectos/{nombres_proyectos}
 #### Creo archivos en el Proyecto
-POST /API/proyectos/{nombres_proyectos}/archivosadjuntos/misproyectos
+POST /api/proyectos/{nombres_proyectos}/archivosadjuntos
 #### Actualizo nombres de Proyecto
-PUT /API/proyectos/{nombres_proyectos}
+PUT /api/proyectos/{nombres_proyectos}
 
 
 
