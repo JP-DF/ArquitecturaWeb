@@ -31,7 +31,7 @@ app.use('/api', dbproyectos);
 
 
 
-mongoose.connect('mongodb://localhost/dbproyectos', function(err, res) {
+mongoose.connect('mongodb://localhost/dbproyectos2', function(err, res) {
   if(err) {
     console.log('ERROR de conexion con MONGODB. ' + err);
   }
