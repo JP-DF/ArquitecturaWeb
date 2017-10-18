@@ -29,3 +29,12 @@ added 44 packages, removed 6 packages and updated 17 packages in 18.89s
 
 
 Node server running on http://localhost:3000
+
+
+chrome://apps/
+POSTMAN
+JSON FORMATER
+
+
+Hasta aca llegue
+https://www.youtube.com/watch?v=YMJEAFVl63E
