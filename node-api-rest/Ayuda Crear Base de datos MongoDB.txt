@@ -1,6 +1,0 @@
-crear una base de datos mongodb
-
-use dbproyectos
-show dbs
-db.movie.insert({"dbproyectos":"tutorials point"})
-show dbs
