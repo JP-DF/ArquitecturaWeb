@@ -34,19 +34,19 @@ Para acceder al servicio, los PM deberan estar dados de alta mediante el sitio e
 </br>
 
 <a name="EndPoints"></a>
-## EndPoints
+## EndPoints Dominio: localhost:3000
 #### Obtengo datos del proyecto
-GET /api/proyectos/{nombres_proyectos}
+GET /proyecto/
 #### Elimino Proyecto
-DELETE /api/proyectos/{nombres_proyectos}
+DELETE /proyecto/:proyectoId
 #### Elimino archivos del Proyecto
-DELETE /api/proyectos/{nombres_proyectos}
+DELETE /proyecto/:proyectoId
 #### Creo nombres de Proyecto
-POST /api/proyectos/{nombres_proyectos}
+POST /proyecto/
 #### Creo archivos en el Proyecto
-POST /api/proyectos/{nombres_proyectos}/archivosadjuntos
+POST /proyecto/
 #### Actualizo nombres de Proyecto
-PUT /api/proyectos/{nombres_proyectos}
+PUT /proyecto/:proyectoId
 
 
 
@@ -58,10 +58,8 @@ PUT /api/proyectos/{nombres_proyectos}
 <table>
 <tr><th>Id mensaje</th><th>Mensaje</th></tr>
 <tr><td>200</td><td>Conexion exitosa.[GET/PUT]</td></tr> 
-<tr><td>201</td><td>Recurso creado exitosamente.[POST]</td></tr> 
 <tr><td>404</td><td>Informacion no disponible.[GET/PUT/DELETE]</td></tr> 
-<tr><td>401</td><td>No tiene autorizacion para el aceso intentado. [GET/PUT/DELETE]</td></tr> 
-<tr><td>503</td><td>Servicio no disponible.</td></tr>
+<tr><td>404</td><td>Informacion no disponible.[direccion incorrecta]</td></tr> 
 </table>
 
 [<sub>Volver a inicio</sub>](#uso)
