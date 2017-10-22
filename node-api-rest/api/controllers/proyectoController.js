@@ -51,7 +51,7 @@ exports.eliminar_un_proyecto = function(req, res) {
   }, function(err, proyecto) {
     if (err)
       res.send(err);
-    res.json({ message: 'Proyecto eliminado exitosamente' });
+    res.json({ message: 'Proyecto eliminado' });
   });
 };
 
