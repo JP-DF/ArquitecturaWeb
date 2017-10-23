@@ -17,7 +17,7 @@
 <a name="#uso"></a>
 ## Uso
 Desarrollo realizado en lenguaje de programación interpretado JavaScript.</br>
-El proyecto consiste en contener un ABM de proyectos, los cuales daran acceso a un repositorio de informacion donde se declara el proyecto, duracion, asi tambien poder cargar archivos ligado al proyecto.</br> </br>
+El proyecto consiste en contener un ABM de proyectos, los cuales daran acceso a un repositorio de informacion donde se declara el nombre del proyecto, estado del mismo(pendiente,en curso,finalizado).</br> </br>
 La base de datos utilizada es mongoDB.</br>
 Obtener mas informacion a traves de la URL: README.md: https://github.com/JP-DF/ArquitecturaWeb-JP-DF/blob/master/README.md
 </br>
