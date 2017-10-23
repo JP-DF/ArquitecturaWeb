@@ -26,7 +26,7 @@ exports.crear_un_proyecto = function(req, res) {
 
 
 exports.leer_un_proyecto = function(req, res) {
-  Proyecto.findById(req.params.proyectoId, function(err, proyecto) {
+  Proyecto.findById({_id: req.params.proyectoId}, function(err, proyecto) {
     if (err)
       res.send(err);
     res.json(proyecto);
