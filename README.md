@@ -37,16 +37,16 @@ Para acceder al servicio, los PM deberan estar dados de alta mediante el sitio e
 ## EndPoints Dominio: localhost:3000
 #### Obtengo datos del proyecto
 GET /proyecto/
-#### Elimino Proyecto
-DELETE /proyecto/:proyectoId
+#### Elimino un Proyecto 
+DELETE /proyecto/{:proyectoId}
 #### Elimino archivos del Proyecto
-DELETE /proyecto/:proyectoId
+DELETE /proyecto/{:proyectoId}
 #### Creo nombres de Proyecto
 POST /proyecto/
 #### Creo archivos en el Proyecto
 POST /proyecto/
 #### Actualizo nombres de Proyecto
-PUT /proyecto/:proyectoId
+PUT /proyecto/{:proyectoId}
 
 
 
