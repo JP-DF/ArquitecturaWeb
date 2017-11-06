@@ -1,0 +1,14 @@
+{
+  "name": "API-PROYECTOS",
+  "version": "1.0.0",
+  "description": "UP 2017.",
+  "main": "server.js",
+  "author": "FIALA-LOPREIATO",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^4.12.3",
+    "body-parser": "~1.5.2",
+    "method-override": "~2.1.2",
+    "morgan": "~1.2.2"
+  }
+}
