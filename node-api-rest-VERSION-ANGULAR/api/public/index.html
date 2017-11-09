@@ -1,65 +1,59 @@
-<html ng-app="angularProyecto">
+<!doctype html>
+
+<html ng-app="MainApp">
 <head>
-    <!-- META -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
-
-    <title>Angular Proyecto </title>
-
-    <!-- SCROLLS -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
-    <style>
-        html                    { overflow-y:scroll; }
-        body                    { padding-top:50px; }
-        #todo-list              { margin-bottom:30px; }
-    </style>
-
-    
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>API FIALA - LOPREIATO</title>
+	<!-- Cargamos bootstrap -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<!-- Cargamos angular -->
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+	<!-- Cargamos el javascript de angular -->
+	<script src="main.js"></script>
 
 </head>
-<!-- SET THE CONTROLLER AND GET ALL TODOS -->
 <body ng-controller="mainController">
-    <div class="container">
+	<div class="container">
 
-        <!-- HEADER AND TODO COUNT -->
-        <div class="jumbotron text-center">
-            <h1>Angular Proyecto <h1> FIALA - LOPREIATO <h1> Registros en Base MongoDB: <span class="label label-info">{{ todos.length }}</span></h1>
-        </div>
+		<div class="jumbotron text-center" ng-prueba>
+		    <h1>API UP: FIALA - LOPREIATO </h1>
+     		<h1>NodeJS + MongoDB + Angular </h1>
+			<h1>Nº de Registros: <span class="label label-success">{{ proyectos.length }}</span></h1>
+		</div>
 
-        <!-- TODO LIST -->
-        <div id="todo-list" class="row">
-            <div class="col-sm-4 col-sm-offset-4">
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-1">
+				<table class="table table-striped">
+					<tr class="info">
+						<td>Nombre_Proyecto</td>
+						<td>Created_Date</td>
+						<td>Estado</td>
+					</tr>
+					<tr ng-repeat="proyecto in proyectos" ng-click="selectPerson(proyecto)">
+						<td>{{ proyecto.nombre_proyecto }}</td>
+						<td>{{ proyecto.Created_date }}</td>
+						<td>{{ proyecto.estado }}</td>						
+					</tr>
+				</table>					
+			</div>
+			<div class="col-sm-4 col-sm-offset-1 text-center">
+				<form name="myForm">
+					<div class="form-group">
+						<input type="text" class="form-control input-lg text-center" placeholder="Nombre_Proyecto" ng-model="newProyecto.nombre_proyecto" required>
+						<br>
+						<input type="text" class="form-control input-lg text-center" placeholder="Created_date" ng-model="newProyecto.Created_date" required>
+						<br>
+						<input type="text" class="form-control input-lg text-center" placeholder="estado" ng-model="newProyecto.estado" required>
+					</div>
 
-                <!-- LOOP OVER THE TODOS IN $scope.todos -->
-                <div class="checkbox" ng-repeat="todo in todos">  
-                    <label>
-                        <input type="checkbox" ng-click="deleteTodo(todo._id)"> {{ todo.text }} 
-                    </label>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- FORM TO CREATE TODOS -->
-        <div id="todo-form" class="row">
-            <div class="col-sm-8 col-sm-offset-2 text-center">
-                <form>
-                    <div class="form-group">
-
-                        <!-- BIND THIS VALUE TO formData.text IN ANGULAR -->
-                        <input type="text" class="form-control input-lg text-center" placeholder="AGREGAR NUEVO PROYECTO" ng-model="formData.text">
-                    </div>
-
-                    <!-- createToDo() WILL CREATE NEW TODOS -->
-                    <button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">accion</button>
-                </form>
-            </div>
-        </div>
-
-    </div>
-<!-- SPELLS -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- load jquery -->
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular -->
-    <script src="main.js"></script>
+					<!-- Acciones que podemos realizar en el formulario -->
+					<button type="submit" class="btn btn-success btn-lg" ng-click="registrarProyecto()" ng-disabled="myForm.$invalid || selected">Registrar</button>
+					<button type="submit" class="btn btn-warning btn-lg" ng-click="modificarProyecto(newProyecto)" ng-disabled="!newProyecto.nombre_proyecto || !newProyecto.Created_date || !newProyecto.estado || !selected">Modificar</button>
+					<button type="submit" class="btn btn-danger btn-lg" ng-click="borrarProyecto(newProyecto)" ng-disabled="!newProyecto.nombre_proyecto || !newProyecto.Created_date || !newProyecto.estado || !selected">Borrar</button>
+				</form>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

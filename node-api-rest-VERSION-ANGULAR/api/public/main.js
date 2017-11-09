@@ -1,42 +1,60 @@
-var angularProyecto = angular.module('angularProyecto', []);
+angular.module('MainApp', [])
 
 function mainController($scope, $http) {
-    $scope.formData = {};
+	$scope.newProyecto = {};
+	$scope.proyectos = {};
+	$scope.selected = false;
 
-    // cuando carga la pagina trae los registros con la API de la base de datos
-    $http.get('/proyecto')
-        .success(function(data) {
-            $scope.todos = data;
-            console.log(data);
-        })
-        .error(function(data) {
-            console.log('Error: ' + data);
-        });
+	// Obtenemos todos los datos de la base de datos
+	$http.get('/proyecto').success(function(data) {
+		$scope.proyectos = data;
+	})
+	.error(function(data) {
+		console.log('Error: ' + data);
+	});
 
-		
-    // cuando cargo un registro lo envia con la API
-    $scope.createTodo = function() {
-        $http.post('/proyecto', $scope.formData)
-            .success(function(data) {
-                $scope.formData = {}; // limpia formulario
-                $scope.todos = data;
-                console.log(data);
-            })
-            .error(function(data) {
-                console.log('Error: ' + data);
-            });
-    };
+	// Función para registrar un proyecto
+	$scope.registrarPersona = function() {
+		$http.post('/proyecto', $scope.newProyecto)
+		.success(function(data) {
+				$scope.newProyecto = {}; // Borramos los datos del formulario
+				$scope.proyectos = data;
+			})
+		.error(function(data) {
+			console.log('Error: ' + data);
+		});
+	};
 
-    // borra al llenar checkbox
-    $scope.deleteTodo = function(id) {
-        $http.delete('/proyecto/' + id)
-            .success(function(data) {
-                $scope.todos = data;
-                console.log(data);
-            })
-            .error(function(data) {
-                console.log('Error: ' + data);
-            });
-    };
+	// Función para editar los datos de un proyecto
+	$scope.modificarPersona = function(newProyecto) {
+		$http.put('/proyecto/' + $scope.newProyecto._id, $scope.newProyecto)
+		.success(function(data) {
+				$scope.newProyecto = {}; // Borramos los datos del formulario
+				$scope.proyectos = data;
+				$scope.selected = false;
+			})
+		.error(function(data) {
+			console.log('Error: ' + data);
+		});
+	};
 
+	// Función que borra un objeto proyecto con su id
+	$scope.borrarPersona = function(newProyecto) {
+		$http.delete('/proyecto/' + $scope.newProyecto._id)
+		.success(function(data) {
+			$scope.newProyecto = {};
+			$scope.proyectos = data;
+			$scope.selected = false;
+		})
+		.error(function(data) {
+			console.log('Error: ' + data);
+		});
+	};
+
+	// Función para tomar el objeto seleccionado de la tabla
+	$scope.selectPerson = function(proyecto) {
+		$scope.newProyecto = proyecto;
+		$scope.selected = true;
+		console.log($scope.newProyecto, $scope.selected);
+	};
 }

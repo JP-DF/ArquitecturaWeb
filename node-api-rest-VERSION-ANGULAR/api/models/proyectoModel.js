@@ -10,15 +10,12 @@ var TaskSchema = new Schema({
     required: 'proyectos'
   },
   Created_date: {
-    type: Date,
-    default: Date.now
+    type: String,
+    required: 'proyectos'
   },
   estado: {
-    type: [{
-      type: String,
-      enum: ['pendiente', 'en curso', 'finalizado']
-    }],
-    default: ['pendiente']
+    type: String,
+    required: 'proyectos'
   }
 });
 
