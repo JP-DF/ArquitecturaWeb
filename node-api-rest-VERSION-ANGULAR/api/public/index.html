@@ -18,17 +18,21 @@
 
 		<div class="jumbotron text-center" ng-prueba>
 <!-- TEXTO DE PAGINA -->
-		    <h1>API UP: FIALA - LOPREIATO </h1>
-     		<h1>NodeJS + MongoDB + Angular </h1>
-			<h1>Nº de Registros: <span class="label label-success">{{ proyectos.length }}</span></h1>
+		    <h2 align="left">Materia: Arquitectura Web - Universidad de Palermo <img src="UP.JPG" width="60" height="60" alt=""></h2>
+		    <h2 align="left">Alumnos: FIALA - LOPREIATO</h2>
+		    <h2 align="left">Docente: Diego Marafetti</h2>
+     		<h2 align="left">Desarrolo API: MongoDB + NodeJS + Angular </h2>
+			<h2 align="left">Esquema de trabajo aplicado:</h2>
+			<p align="left"><img src="Diagrama.JPG" width="450" height="136" alt=""></p>
+			<h2>Nº de Registros en Base MongoDB "proyectos": <span class="label label-success">{{ proyectos.length }}</span>		</h2>
 		</div>
 
 		<div class="row">
 			<div class="col-sm-6 col-sm-offset-1">
 				<table class="table table-striped">
 					<tr class="info">
-						<td>Nombre_Proyecto</td>
-						<td>Created_Date</td>
+						<td>Nombre del Proyecto</td>
+						<td>Fecha de Creacion</td>
 						<td>Estado</td>
 					</tr>
 <!-- Armo tabla con los resultados -->
@@ -51,7 +55,7 @@
 					</div>
 
 <!-- Acciones que podemos realizar en el formulario con los botones -->
-					<button type="submit" class="btn btn-success btn-lg" ng-click="registrarProyecto()" ng-disabled="myForm.$invalid || selected">Registrar</button>
+					<button type="submit" class="btn btn-success btn-lg" ng-click="registrarProyecto()" ng-disabled="myForm.$invalid || selected">Alta</button>
 					<button type="submit" class="btn btn-warning btn-lg" ng-click="modificarProyecto(newProyecto)" ng-disabled="!newProyecto.nombre_proyecto || !newProyecto.Created_date || !newProyecto.estado || !selected">Modificar</button>
 					<button type="submit" class="btn btn-danger btn-lg" ng-click="borrarProyecto(newProyecto)" ng-disabled="!newProyecto.nombre_proyecto || !newProyecto.Created_date || !newProyecto.estado || !selected">Borrar</button>
 				</form>
