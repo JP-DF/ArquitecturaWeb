@@ -16,8 +16,8 @@
 
 <a name="#uso"></a>
 ## Uso
-Desarrollo realizado en lenguaje de programación interpretado JavaScript.</br>
-El proyecto consiste en contener un ABM de proyectos, los cuales daran acceso a un repositorio de informacion donde se declara el nombre del proyecto, estado del mismo(pendiente,en curso,finalizado).</br> </br>
+Desarrollo realizado en lenguaje de programación interpretado JavaScript MONGODB + NODEJS + ANGULAR.</br>
+El proyecto consiste en contener un ABM de proyectos, los cuales daran acceso a un repositorio de informacion donde se declara el nombre del proyecto, fecha de alta, estado del mismo(pendiente,en curso,finalizado).</br> </br>
 La base de datos utilizada es mongoDB.</br>
 Obtener mas informacion a traves de la URL: README.md: https://github.com/JP-DF/ArquitecturaWeb-JP-DF/blob/master/README.md
 </br>
@@ -57,9 +57,10 @@ PUT /proyecto/{:proyectoId}
 ## Tabla de errores
 <table>
 <tr><th>Id mensaje</th><th>Mensaje</th></tr>
-<tr><td>200</td><td>Conexion exitosa.[GET/PUT]</td></tr> 
-<tr><td>404</td><td>Informacion no disponible.[GET/PUT/DELETE]</td></tr> 
-<tr><td>404</td><td>Informacion no disponible.[direccion incorrecta]</td></tr> 
+<tr><td>200</td><td>Respuesta estándar para peticiones correctas.[GET/PUT]</td></tr> 
+<tr><td>304</td><td>Indica que la petición a la URL no ha sido modificada desde que fue requerida por última vez</td></tr>
+<tr><td>404</td><td>Recurso no encontrado.[GET/PUT/DELETE]</td></tr> 
+<tr><td>404</td><td>Recurso no encontrado.[direccion incorrecta]</td></tr>
 </table>
 
 [<sub>Volver a inicio</sub>](#uso)
