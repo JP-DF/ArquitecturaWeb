@@ -59,7 +59,7 @@ PUT /proyecto/{:proyectoId}
 <tr><th>Id mensaje</th><th>Mensaje</th></tr>
 <tr><td>200</td><td>Respuesta estándar para peticiones correctas.[GET/PUT]</td></tr> 
 <tr><td>304</td><td>Indica que la petición a la URL no ha sido modificada desde que fue requerida por última vez</td></tr>
-<tr><td>404</td><td>Recurso no encontrado.[GET/PUT/DELETE]</td></tr> 
+<tr><td>404</td><td>Recurso no encontrado.[GET/POST/PUT/DELETE]</td></tr> 
 <tr><td>404</td><td>Recurso no encontrado.[direccion incorrecta]</td></tr>
 </table>
 
