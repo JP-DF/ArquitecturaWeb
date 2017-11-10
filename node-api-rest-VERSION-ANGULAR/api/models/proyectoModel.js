@@ -3,7 +3,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-
+//estructura de la base de datos - creo un esquema llamado taskSchema y lo aplico a la base de datos MongoDB "Proyectos"
 var TaskSchema = new Schema({
   nombre_proyecto: {
     type: String,

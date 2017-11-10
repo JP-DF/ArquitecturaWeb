@@ -14,7 +14,7 @@ function mainController($scope, $http) {
 	});
 
 	// Función para registrar un proyecto
-	$scope.registrarPersona = function() {
+	$scope.registrarProyecto = function() {
 		$http.post('/proyecto', $scope.newProyecto)
 		.success(function(data) {
 				$scope.newProyecto = {}; // Borramos los datos del formulario
@@ -26,7 +26,7 @@ function mainController($scope, $http) {
 	};
 
 	// Función para editar los datos de un proyecto
-	$scope.modificarPersona = function(newProyecto) {
+	$scope.modificarProyecto = function(newProyecto) {
 		$http.put('/proyecto/' + $scope.newProyecto._id, $scope.newProyecto)
 		.success(function(data) {
 				$scope.newProyecto = {}; // Borramos los datos del formulario
@@ -39,7 +39,7 @@ function mainController($scope, $http) {
 	};
 
 	// Función que borra un objeto proyecto con su id
-	$scope.borrarPersona = function(newProyecto) {
+	$scope.borrarProyecto = function(newProyecto) {
 		$http.delete('/proyecto/' + $scope.newProyecto._id)
 		.success(function(data) {
 			$scope.newProyecto = {};
@@ -52,7 +52,7 @@ function mainController($scope, $http) {
 	};
 
 	// Función para tomar el objeto seleccionado de la tabla
-	$scope.selectPerson = function(proyecto) {
+	$scope.selectProyect = function(proyecto) {
 		$scope.newProyecto = proyecto;
 		$scope.selected = true;
 		console.log($scope.newProyecto, $scope.selected);

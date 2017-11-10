@@ -5,11 +5,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>API FIALA - LOPREIATO</title>
-	<!-- Cargamos bootstrap -->
+<!-- Cargamos bootstrap -->
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-	<!-- Cargamos angular -->
+<!-- Carga angular -->
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
-	<!-- Cargamos el javascript de angular -->
+<!-- Carga el javascript de angular y llama al archivo MAIN-->
 	<script src="main.js"></script>
 
 </head>
@@ -17,6 +17,7 @@
 	<div class="container">
 
 		<div class="jumbotron text-center" ng-prueba>
+<!-- TEXTO DE PAGINA -->
 		    <h1>API UP: FIALA - LOPREIATO </h1>
      		<h1>NodeJS + MongoDB + Angular </h1>
 			<h1>Nº de Registros: <span class="label label-success">{{ proyectos.length }}</span></h1>
@@ -30,7 +31,8 @@
 						<td>Created_Date</td>
 						<td>Estado</td>
 					</tr>
-					<tr ng-repeat="proyecto in proyectos" ng-click="selectPerson(proyecto)">
+<!-- Armo tabla con los resultados -->
+					<tr ng-repeat="proyecto in proyectos" ng-click="selectProyect(proyecto)">
 						<td>{{ proyecto.nombre_proyecto }}</td>
 						<td>{{ proyecto.Created_date }}</td>
 						<td>{{ proyecto.estado }}</td>						
@@ -39,15 +41,16 @@
 			</div>
 			<div class="col-sm-4 col-sm-offset-1 text-center">
 				<form name="myForm">
+<!-- cuadros para entrada de texto que usan de los botones -->
 					<div class="form-group">
-						<input type="text" class="form-control input-lg text-center" placeholder="Nombre_Proyecto" ng-model="newProyecto.nombre_proyecto" required>
+						<input type="text" class="form-control input-lg text-center" placeholder="Ingrese nombre del Proyecto" ng-model="newProyecto.nombre_proyecto" required>
 						<br>
-						<input type="text" class="form-control input-lg text-center" placeholder="Created_date" ng-model="newProyecto.Created_date" required>
+						<input type="text" class="form-control input-lg text-center" placeholder="Ingrese fecha MM/DD/YYYY" ng-model="newProyecto.Created_date" required>
 						<br>
-						<input type="text" class="form-control input-lg text-center" placeholder="estado" ng-model="newProyecto.estado" required>
+						<input type="text" class="form-control input-lg text-center" placeholder="Ingrese estado del mismo" ng-model="newProyecto.estado" required>
 					</div>
 
-					<!-- Acciones que podemos realizar en el formulario -->
+<!-- Acciones que podemos realizar en el formulario con los botones -->
 					<button type="submit" class="btn btn-success btn-lg" ng-click="registrarProyecto()" ng-disabled="myForm.$invalid || selected">Registrar</button>
 					<button type="submit" class="btn btn-warning btn-lg" ng-click="modificarProyecto(newProyecto)" ng-disabled="!newProyecto.nombre_proyecto || !newProyecto.Created_date || !newProyecto.estado || !selected">Modificar</button>
 					<button type="submit" class="btn btn-danger btn-lg" ng-click="borrarProyecto(newProyecto)" ng-disabled="!newProyecto.nombre_proyecto || !newProyecto.Created_date || !newProyecto.estado || !selected">Borrar</button>

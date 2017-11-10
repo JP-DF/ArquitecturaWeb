@@ -1,58 +1,43 @@
 // set up ========================
     var express  = require('express');
-    var app      = express();                               // create our app w/ express
-    var mongoose = require('mongoose');                     // mongoose for mongodb
-    var morgan = require('morgan');             // log requests to the console (express4)
-    var bodyParser = require('body-parser');    // pull information from HTML POST (express4)
-    var methodOverride = require('method-override'); // simulate DELETE and PUT (express4)
+    var app      = express();                               // crea aplicacion con Node express
+    var mongoose = require('mongoose');                     // creo mongoose para mongodb
+    var morgan = require('morgan');             // habilito logs por  consola (express4)
+    var bodyParser = require('body-parser');    // hago pull de informacion  HTML POST (express4)
+    var methodOverride = require('method-override'); // simula DELETE and PUT (express4)
     var Proyecto = require('C://node-api-rest-VERSION-ANGULAR//api//models//proyectoModel'); //llamo al Modelo
   
-// configuration =================
+// configuracion =================
 
    mongoose.Promise = global.Promise;
-   mongoose.connect('mongodb://localhost/proyectos');            	// connect to mongoDB database on modulus.io
+   mongoose.connect('mongodb://localhost/proyectos');            	// conexion a mongoDB database 
    
-	app.use(express.static(__dirname + '/public'));                 // set the static files location /public/img will be /img for users
-    app.use(morgan('dev'));                                         // log every request to the console
-    app.use(bodyParser.urlencoded({'extended':'true'}));            // parse application/x-www-form-urlencoded
-    app.use(bodyParser.json());                                     // parse application/json
-    app.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parse application/vnd.api+json as json
+	app.use(express.static(__dirname + '/public'));                 // seteo estatico de archivos
+    app.use(morgan('dev'));                                         // log consola|
+    app.use(bodyParser.urlencoded({'extended':'true'}));            // parseo funcion
+    app.use(bodyParser.json());                                     // parseo funcion/json
+    app.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parseo funcion/api+json 
     app.use(methodOverride());
-
-	
-// mongoose instancia de URL de conexion
-//mongoose.Promise = global.Promise;
-//mongoose.connect('mongodb://localhost/proyectos'); 
-
-//app.use(bodyParser.urlencoded({ extended: true }));
-//app.use(bodyParser.json());
 
 
 var routes = require('C://node-api-rest-VERSION-ANGULAR//api//routes/proyectoRoutes'); //llamo a las Rutas declaradas
-routes(app); //registro de rutas
+routes(app); //registro de rutas en la app
 
 
-// Carga una vista HTML 
-// Angular para el Frontend
-
+// Carga una vista HTML  - Angular para el Frontend
 app.get('/', function(req, res) {						
-	res.sendfile('C://node-api-rest-VERSION-ANGULAR//api//public//index.html');	// load the single view file (angular will handle the page changes on the front-end)		
+	res.sendFile('C://node-api-rest-VERSION-ANGULAR//api//public//index.html');	// carga el front-end)		
 });
 
 
-// listen (start app with node server.js) ======================================
+// Escucha por el puerto que declaro (inicio aplicacion con "node server.js") ======================================
     app.listen(3000);
-    console.log("App listening on port 3000");
-	
-// application -------------------------------------------------------------
-    app.get('*', function(req, res) {
-        res.sendfile('C://node-api-rest-VERSION-ANGULAR//api//public/index.html'); // load the single view file (angular will handle the page changes on the front-end)
-    });	
+    console.log("Aplicacion configurada en puerto 3000");
 
-	
+// Si no inicia el index de angular muestra error 404 ======================================
 app.use(function(req, res) {
   res.status(404).send({url: req.originalUrl + ' not found'})
 });
 
-
+// leyenda de los autores ======================================
 console.log('DESARROLLO DE API FIALA - LOPREIATO - UP: 3000');
