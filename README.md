@@ -27,8 +27,8 @@ Obtener mas informacion a traves de la URL: README.md: https://github.com/JP-DF/
 
 <a name="operatoria"></a>
 ## Operatoria de uso 
-Mediante una única interface de simple gestion, los PM acceden a toda la informacion necesaria al momento que lo requiera sin necesidad de contar con ningún conocimiento extra, ProyectoCero se ocupa de gestionar la informacion necesaria incluyendo archivos de proyect.</br>
-Para acceder al servicio, los PM deberan estar dados de alta mediante el sitio exclisivo de ProyectoCero. En estos procesos se generará el usuario y clave para este servicio.
+Mediante una única interface de simple gestion, los project manager (PM) acceden a toda la informacion necesaria al momento que lo requiera sin necesidad de contar con ningún conocimiento extra, ProyectoCero se ocupa de gestionar la informacion necesaria incluyendo archivos de proyect.</br>
+Para acceder al servicio, los PM deberan estar dados de alta mediante el sitio exclusivo de ProyectoCero. En estos procesos se generará el usuario y clave para este servicio.
 
 [<sub>Volver a inicio</sub>](#uso)
 </br>
@@ -39,11 +39,7 @@ Para acceder al servicio, los PM deberan estar dados de alta mediante el sitio e
 GET /proyecto/
 #### Elimino un Proyecto 
 DELETE /proyecto/{:proyectoId}
-#### Elimino archivos del Proyecto
-DELETE /proyecto/{:proyectoId}
 #### Creo nombres de Proyecto
-POST /proyecto/
-#### Creo archivos en el Proyecto
 POST /proyecto/
 #### Actualizo nombres de Proyecto
 PUT /proyecto/{:proyectoId}
